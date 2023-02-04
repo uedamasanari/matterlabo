@@ -9,7 +9,6 @@ export default {
   setup() {
     const game = ref(null);
     onMounted(()=> {
-    console.log(game.value);
     var MouseConstraint = Matter.MouseConstraint;
     var Engine = Matter.Engine, 
     Render = Matter.Render,
@@ -144,6 +143,8 @@ export default {
             restitution: 1.3, // 跳ね返り
         }
         );
+        var image = new Image();
+        image.src = "./apple.png";
         var box10 = Bodies.rectangle(
         Math.floor(Math.random()*400), // x座標をランダムに設定
         200, 
@@ -154,6 +155,13 @@ export default {
             density: 1.5, // 質量
             friction: 0, // 摩擦
             restitution: 1.3, // 跳ね返り
+            render: {
+                sprite: {
+                    texture: image.src,
+                    width:300,
+                    height:300,
+                }
+            }
         }
         );
     var ground1 = Bodies.rectangle(200, 400, 400, 60, { isStatic: true });
