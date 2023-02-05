@@ -1,7 +1,7 @@
 <template>
   <!-- <Tutorial /> -->
-  <!-- <Gatya /> -->
-  <Iraira />
+  <Gatya />
+  <!-- <Iraira /> -->
   <!-- <Wasyawasya /> -->
 </template>
 <script setup>
