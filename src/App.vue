@@ -1,8 +1,8 @@
 <template>
   <!-- <Tutorial /> -->
-  <Gatya />
+  <!-- <Gatya /> -->
   <!-- <Iraira /> -->
-  <!-- <Wasyawasya /> -->
+  <Wasyawasya />
 </template>
 <script setup>
 import Tutorial from './components/tutorial.vue'
